@@ -1,47 +1,207 @@
 ﻿{
   "Questions": [
     {
-      "Title": "#1 В поісках баб",
+      "Title": "№1 В поісках баб.",
       "Order": 1,
       "QuestionBlocks": [
         {
           "Order": 1,
-          "Text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-          "ImageName": "testimage.jpg"
+          "Text": ""
         }
       ],
       "QuestionKeys": [
-        "key1",
-        "key2"
+        "key1"
       ]
     },
     {
-      "Title": "#2 Кіа Спортейдж",
+      "Title": "№2 Пилосмок.",
       "Order": 2,
       "QuestionBlocks": [
         {
           "Order": 1,
-          "Text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          "ImageName": "testimage.jpg"
+          "Text": "Жінка відправила Чоловіка щоб він купив за 100 гривень новий німецький пилесос, але так як він не читає інструкцію, то він не знав, як ним користуватись, може ви йому підскажете?"
         }
       ],
       "QuestionKeys": [
-        "key3",
-        "key4"
+        "key2"
       ]
     },
     {
-      "Title": "#3 Javascript",
+      "Title": "№3 Домкрат - наше все.",
       "Order": 3,
       "QuestionBlocks": [
         {
           "Order": 1,
-          "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "ImageName": "testimage.jpg"
+          "Text": "Що нам потрібно - домкрат"
+        },
+        {
+          "Order": 2,
+          "Text": "Де його взяти - в авто,"
+        },
+        {
+          "Order": 3,
+          "Text": "Навіщо він нам - він дасть підсказку."
+        }
+      ],
+      "QuestionKeys": [
+        "key3"
+      ]
+    },
+    {
+      "Title": "№4 Пропуск.",
+      "Order": 4,
+      "QuestionBlocks": [
+        {
+          "Order": 1,
+          "Text": "Пропуск"
+        }
+      ],
+      "QuestionKeys": [
+        "key4"
+      ]
+    },
+    {
+      "Title": "№5 Польська євробляха.",
+      "Order": 5,
+      "QuestionBlocks": [
+        {
+          "Order": 1,
+          "Text": "Мій друг буквально сьогодні , щоб зекономити купив собі нерозмитненийавтомобіль, тепер він постійно виглядає у вікно і не може налюбуватись на свій польський номер <b>ткі0051<b>"
         }
       ],
       "QuestionKeys": [
         "key5"
+      ]
+    },
+    {
+      "Title": "№6 Радіо Шансон.",
+      "Order": 6,
+      "QuestionBlocks": [
+        {
+          "Order": 1,
+          "Text": "По трасі магнітофон не зміг зловити жодної хвилі, а з динаміків лише доносились радіопередачі провінціального радіо 96.4, де розмовляв журналіст:"
+        },
+        {
+          "Order": 2,
+          "Text": "Спочатку він говорив, що уже як тридцять років ми перемогли, а потім розказав про себе, я запам'ятав тільки що його звати Костя Василенко."
+        },
+        {
+          "Order": 3,
+          "Text": "Далі була реклама « заїхати на … завжди гарна ідея»."
+        },
+        {
+          "Order": 4,
+          "Text": "Потім хвиля обірвалась і більше я нічого не чув... Він скуки я почав співати."
+        }
+      ],
+      "QuestionKeys": [
+        "key6"
+      ]
+    },
+    {
+      "Title": "№7 Пушкагонка.",
+      "Order": 7,
+      "QuestionBlocks": [
+        {
+          "Order": 1,
+          "Text": "- Йомайо, який спорткар, що за модель - черато."
+        },
+        {
+          "Order": 2,
+          "Text": "- А скільки їсть? - багато."
+        },
+        {
+          "Order": 3,
+          "Text": "- А у вас готівка? Нє, по талону."
+        },
+        {
+          "Order": 4,
+          "Text": "- Вам дизель? - ні мені бензин! -95-й? -100-й."
+        },
+        {
+          "Order": 5,
+          "Text": "- 95-й? - 100-й."
+        }
+      ],
+      "QuestionKeys": [
+        "key7"
+      ]
+    },
+    {
+      "Title": "№8 Пропуск.",
+      "Order": 8,
+      "QuestionBlocks": [
+        {
+          "Order": 1,
+          "Text": "Пропуск"
+        }
+      ],
+      "QuestionKeys": [
+        "key8"
+      ]
+    },
+    {
+      "Title": "№9 Шо ета?",
+      "Order": 9,
+      "QuestionBlocks": [
+        {
+          "Order": 1,
+          "Text": "- Мене звати НЕСТОР, а тебе? - А мене Юра, а тебе?"
+        },
+        {
+          "Order": 2,
+          "Text": "- А мене Андрєй! А який ваш номер?"
+        },
+        {
+          "Order": 3,
+          "Text": "- Мій номер 1012, а твій? - А мій 1035! А твій?"
+        },
+        {
+          "Order": 4,
+          "Text": "- А мій 1000!!! Я буду чекати там!!!!"
+        }
+      ],
+      "QuestionKeys": [
+        "key9"
+      ]
+    },
+    {
+      "Title": "№10 Я мєстний!",
+      "Order": 10,
+      "QuestionBlocks": [
+        {
+          "Order": 1,
+          "Text": "Цю коротку вулицю знають усі хто живе на замості, там є своя школа, мчс, завод, клініка, пту, <b>ААААА!<b>"
+        }
+      ],
+      "QuestionKeys": [
+        "key10"
+      ]
+    },
+    {
+      "Title": "№11 Пропуск.",
+      "Order": 11,
+      "QuestionBlocks": [
+        {
+          "Order": 1,
+          "Text": "Михайло Володимирович Воробйов стоїть і дивиться, як повз нього проїзджають автомобілі, він згадує як, колись приїхав до вінниці, як колись торгував на ринку, як колись процював на заводі."
+        }
+      ],
+      "QuestionKeys": [
+        "key11"
+      ]
+    },
+    {
+      "Title": "№12 Пропуск.",
+      "Order": 12,
+      "QuestionBlocks": [
+        {
+          "Order": 1,
+          "Text": "Пропуск"
+        }
+      ],
+      "QuestionKeys": [
+        "key12"
       ]
     }
   ]
