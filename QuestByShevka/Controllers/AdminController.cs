@@ -29,5 +29,20 @@ namespace QuestByShevka.WebApi.Controllers
 
             return Ok();
         }
+
+        [Route("/helpme")]
+        [HttpPost]
+        public ActionResult StartGame([FromBody] string key)
+        {
+            if (key.Trim().ToLower() == "camry")
+            {
+                return Ok("Три і пять");
+            }
+            else
+            {
+                return Ok("Bad key");
+            }
+
+        }
     }
 }
