@@ -23,7 +23,6 @@ namespace QuestByShevka.WebApi.Controllers
         }
         #endregion
 
-
         /// <summary>
         /// Starts the game.
         /// </summary>

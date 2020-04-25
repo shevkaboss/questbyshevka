@@ -36,7 +36,7 @@ namespace QuestByShevka.Services.Models
 
         public QuestionKeyStatus VerifyAnswer(string answer)
         {
-            var isQuestionKeyExists = CurrentQuestion.QuestionKeys.Any(x => x.Split("||").Contains(answer.ToLower()));
+            var isQuestionKeyExists = CurrentQuestion.QuestionKeys.Any(x => x.ToLower().Split("||").Contains(answer.ToLower()));
             
             if (isQuestionKeyExists)
             {
