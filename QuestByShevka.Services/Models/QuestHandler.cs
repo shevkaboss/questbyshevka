@@ -79,7 +79,7 @@ namespace QuestByShevka.Services.Models
             MapAnswerStatus[answer.ToLower()] = QuestionKeyStatus.Accepted;
         }
 
-        private Question GetQuestionByPosition(int position)
+        public Question GetQuestionByPosition(int position)
         {
             var nextQuestion = QuestCore.Questions.FirstOrDefault(q => q.Order == position);
 

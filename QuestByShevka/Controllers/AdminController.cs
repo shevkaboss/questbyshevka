@@ -30,6 +30,14 @@ namespace QuestByShevka.WebApi.Controllers
             return Ok();
         }
 
+        [HttpGet]
+        public ActionResult GoToQuestion(int number)
+        {
+            QuestRunnerService.SetQuestion(number);
+
+            return Ok();
+        }
+
         [Route("/helpme")]
         [HttpPost]
         public ActionResult StartGame([FromBody] string key)
@@ -42,7 +50,6 @@ namespace QuestByShevka.WebApi.Controllers
             {
                 return Ok("Bad key");
             }
-
         }
     }
 }

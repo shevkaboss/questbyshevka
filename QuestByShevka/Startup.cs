@@ -10,6 +10,7 @@ using System.IO;
 using System;
 using QuestByShevka.Services.Models;
 using QuestByShevka.Services;
+using QuestByShevka.Shared.Utils;
 
 namespace QuestByShevka.WebApi
 {
@@ -35,6 +36,8 @@ namespace QuestByShevka.WebApi
 
             services.AddSingleton<QuestHandler>();
             services.AddSingleton<QuestRunnerService>();
+
+            services.AddHttpClient<SelfTrigger>();
 
             services.AddCors();
 
@@ -62,6 +65,9 @@ namespace QuestByShevka.WebApi
             {
                 c.SwaggerEndpoint("./v1/swagger.json", "Quest By Shevka API");
             });
+
+            var selfTrigger = app.ApplicationServices.GetRequiredService<SelfTrigger>();
+            selfTrigger.StartHerokuSelfTrigger();
 
             app.UseRouting();
             app.UseCors(opt => opt.AllowAnyOrigin().AllowAnyHeader());

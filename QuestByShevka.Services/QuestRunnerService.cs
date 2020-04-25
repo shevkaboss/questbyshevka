@@ -78,5 +78,14 @@ namespace QuestByShevka.Services
         {
             QuestHandler.Reset();
         }
+
+        public void SetQuestion(int position)
+        {
+            try
+            {
+                QuestHandler.GetQuestionByPosition(position);
+            }
+            finally { }
+        }
     }
 }

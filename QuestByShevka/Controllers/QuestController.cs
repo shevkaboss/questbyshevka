@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using QuestByShevka.Services;
 using QuestByShevka.Services.Models;
+using QuestByShevka.Shared.Utils;
 using QuestByShevka.WebApi.Models.Requests;
 using QuestByShevka.WebApi.Models.Responses;
 using System.ComponentModel.DataAnnotations;
@@ -77,6 +78,13 @@ namespace QuestByShevka.WebApi.Controllers
         [HttpPost]
         public ActionResult ProceedAnswer([Required][FromBody] ProceedAnswerRequest proceedAnswerRequest)
         {
+            if (string.IsNullOrEmpty(proceedAnswerRequest.Answer))
+            {
+                BadRequest("Empty answer field."); 
+            }
+
+            TelegramBotUtil.SendMessage($"Inputed asnwer: {proceedAnswerRequest.Answer}");
+
             var answerStatus = QuestRunnerService.IsCorrentAnswer(proceedAnswerRequest.Answer, proceedAnswerRequest.QuestionNumber);
             var isQuestionComplete = QuestRunnerService.NeedToProceedNextQuestion();
 
@@ -94,6 +102,8 @@ namespace QuestByShevka.WebApi.Controllers
             var (question, isLastQuestion) = QuestRunnerService.GetNextQuestion();
 
             var questionResponse = CreateQuestionResponse(question, isLastQuestion);
+
+            TelegramBotUtil.SendMessage($"Proceeded to next question.");
 
             return Ok(questionResponse);
         }
