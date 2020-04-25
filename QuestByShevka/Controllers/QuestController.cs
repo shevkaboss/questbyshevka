@@ -43,8 +43,9 @@ namespace QuestByShevka.WebApi.Controllers
         [HttpGet]
         public ActionResult FinishGame()
         {
-            QuestRunnerService.FinishGame();
-            return Ok();
+            var coord = QuestRunnerService.FinishGame();
+
+            return Ok(coord);
         }
 
         /// <summary>

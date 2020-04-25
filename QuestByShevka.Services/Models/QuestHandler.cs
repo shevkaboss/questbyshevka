@@ -36,11 +36,11 @@ namespace QuestByShevka.Services.Models
 
         public QuestionKeyStatus VerifyAnswer(string answer)
         {
-            var isQuestionKeyExists = CurrentQuestion.QuestionKeys.Contains(answer.ToLower());
+            var isQuestionKeyExists = CurrentQuestion.QuestionKeys.Any(x => x.Split("||").Contains(answer.ToLower()));
             
             if (isQuestionKeyExists)
             {
-                if (MapAnswerStatus[answer.ToLower()] == QuestionKeyStatus.Accepted)
+                if (MapAnswerStatus.FirstOrDefault(x => x.Key.Contains(answer.ToLower())).Value == QuestionKeyStatus.Accepted)
                     return QuestionKeyStatus.AlreadyAccepted;
 
                 SetCorrentAnswer(answer);
@@ -76,7 +76,7 @@ namespace QuestByShevka.Services.Models
         #region private memebers
         private void SetCorrentAnswer(string answer)
         {
-            MapAnswerStatus[answer.ToLower()] = QuestionKeyStatus.Accepted;
+            MapAnswerStatus[MapAnswerStatus.FirstOrDefault(x => x.Key.Contains(answer.ToLower())).Key] = QuestionKeyStatus.Accepted;
         }
 
         public Question GetQuestionByPosition(int position)

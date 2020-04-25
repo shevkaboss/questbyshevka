@@ -24,7 +24,7 @@ namespace QuestByShevka.Services
             QuestHandler.QuestStatus = GameStatus.Started;
             return QuestHandler.GetFirstQuestion();
         }
-        public void FinishGame()
+        public string FinishGame()
         {
             if (QuestHandler.QuestStatus != GameStatus.Started)
             {
@@ -37,6 +37,7 @@ namespace QuestByShevka.Services
 
             QuestHandler.QuestStatus = GameStatus.Finished;
             QuestHandler.CurrentQuestion = null;
+            return QuestHandler.QuestCore.Finish;
         }
         public (Question, bool) GetNextQuestion()
         {
