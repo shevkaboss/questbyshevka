@@ -39,6 +39,15 @@ namespace QuestByShevka.Services
             QuestHandler.CurrentQuestion = null;
             return QuestHandler.QuestCore.Finish;
         }
+
+        public string GetFinishCoords()
+        {
+            if (QuestHandler.QuestStatus != GameStatus.Finished)
+            {
+                throw new CorruptedRequestException("Game is not finished.");
+            }
+            return QuestHandler.QuestCore.Finish;
+        }
         public (Question, bool) GetNextQuestion()
         {
             QuestHandler.VerifyGameStarted();
